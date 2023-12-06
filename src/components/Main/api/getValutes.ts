@@ -1,5 +1,4 @@
 const url = `https://www.cbr-xml-daily.ru/daily_json.js`
-const wrongUrl = `https://wwwily_json.js`
 export type Valute = {
   CharCode: string
   ID: string
