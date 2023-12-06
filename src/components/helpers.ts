@@ -1,6 +1,6 @@
 import { Valute } from "./Main/api/getValutes"
 
-export const getValutesArray = (list: any[]) => {
+export const getValutesArray = (list: Valute[]) => {
   const valutes = list.map((obj) => obj.Name)
   return valutes
 }

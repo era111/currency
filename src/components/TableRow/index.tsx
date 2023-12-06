@@ -2,15 +2,11 @@ import React, { FC } from "react"
 import { TableCell, TableRow } from "@mui/material"
 import StarIcon from "@mui/icons-material/Star"
 import StarBorderIcon from "@mui/icons-material/StarBorder"
-
-type RowType = {
-  item: any //{name: string, email:string, phone: string}
-}
+import { Valute } from '../Main/api/getValutes'
 
 interface PropsType {
-  // children: JSX.Element
-  item: any
-  setFavorite: any
+  item: Valute
+  setFavorite: (favorite: string) => void
 }
 
 const Row: FC<PropsType> = ({ setFavorite, item }) => {
